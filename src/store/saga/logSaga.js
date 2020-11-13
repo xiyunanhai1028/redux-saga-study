@@ -14,4 +14,5 @@ function * logger(){
 }
 export default function *(){
     yield takeEvery(ASYNCINCREMENT,logger)
+    console.log('loggersaga结束')
 }

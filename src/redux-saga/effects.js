@@ -2,7 +2,7 @@
  * @Author: dfh
  * @Date: 2020-11-12 19:59:17
  * @LastEditors: dfh
- * @LastEditTime: 2020-11-13 20:42:56
+ * @LastEditTime: 2020-11-13 21:16:48
  * @Modified By: dfh
  * @FilePath: /redux-saga-study/src/redux-saga/effects.js
  */
@@ -65,5 +65,12 @@ export function all(fns){
     return {
         type:'ALL',
         fns
+    }
+}
+
+export function cannel(task){
+    return {
+        type:'CANNEL',
+        task
     }
 }
